@@ -7,7 +7,7 @@ user_input = input("Please enter the absolute path for the file you'd like to an
 file_path = user_input
 parsed = parser.from_file(file_path)
 
-metadata = parsed.get("metadata, {}")
+metadata = parsed.get("metadata", {})
 for key, value in metadata.items():
     print (f"{key}: {value}")
 
