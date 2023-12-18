@@ -18,8 +18,8 @@ def data_extraction():
     if os.path.exists(file_path):
         print("Path verified! Returning results... ")
         metadata = parsed.get("metadata", {})
-    for key, value in metadata.items():
-        print (f"{key}: {value}")
+        for key, value in metadata.items():
+            print (f"{key}: {value}")
     else:
         print("Path NOT valid, please check the absolute path for the target and try again.")
     return file_path
